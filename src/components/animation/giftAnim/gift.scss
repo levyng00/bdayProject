@@ -1,0 +1,31 @@
+@keyframes scaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes messageAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.giftAnim {
+  animation-name: scaleUp;
+  animation-duration: 1s;
+  transition: 250ms all ease-in-out;
+  cursor: pointer;
+  @media (max-width: 510px) {
+    height: 250px;
+    transform: translateY(100px);
+  }
+}
