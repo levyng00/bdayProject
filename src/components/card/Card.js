@@ -9,7 +9,7 @@ const Card = ({ img, openLetter, setOpenLetter, isCorrect, setIsCorrect }) => {
   const handleHint = () => {
     setHint(!hint);
   };
-  const password = "16-06-19";
+  const password = "30-03-24";
   const changeHandler = (e) => {
     setInputPW(e.target.value);
   };
@@ -41,7 +41,7 @@ const Card = ({ img, openLetter, setOpenLetter, isCorrect, setIsCorrect }) => {
       </div>
       <div className="hint">
         <AiFillInfoCircle onClick={handleHint} />
-        {hint && <h1 className="hint-text">Hint : ASCII 4954454854454957</h1>}
+        {hint && <h1 className="hint-text">Hint : First Official Date</h1>}
         {error && <h1 className="error">incorrect password, try again!</h1>}
       </div>
     </>

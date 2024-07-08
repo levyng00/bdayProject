@@ -107,7 +107,7 @@ const About = () => {
             />
           </>
         )}
-        {!solved && activeAnim > 4 && (
+        {/* {!solved && activeAnim > 4 && (
           <>
             <div
               style={{
@@ -122,8 +122,8 @@ const About = () => {
               <Puzzle solved={solved} setSolved={setSolved} />
             </div>
           </>
-        )}
-        {solved && activeAnim > 4 && (
+        )} */}
+        {activeAnim > 4 && (
           <>
             {giftOpen === false ? (
               <Draggable>
@@ -179,7 +179,32 @@ const About = () => {
                           src={letterOpenedImg}
                           alt="letter-open"
                         />
-                        <img className="letter" src={letter} alt="letter" />
+                        {/* <img className="letter" src={letter} alt="letter" /> */}
+                        <div className="letter">
+                          <p>Hey Pumpkin, Happy Birthday!</p>
+                          <p>
+                            You're 21 today and you may think that you're
+                            getting older but to me you are still my baby
+                            hehehe.. I know that I have been making you stressed
+                            out alot these days and adding more problems in your
+                            life than before but I hope you could forgive me for
+                            being such a pain in the ass and i know you have
+                            been working really hard for your job and all and
+                            stress gets to you sometimes, just know that I
+                            gotchuuu and you don't have to worry about a single
+                            thing...
+                          </p>
+                          <p>
+                            I don't have much to say but I'll let you know that
+                            I love youu Thaingam Thaimei,and you're the best
+                            thing that ever happened to me...
+                          </p>
+                          <p>
+                            And for today, let's forget everything and have some
+                            fun shall we 🤩🤩??
+                          </p>
+                          <p className="letterFooter">-Levy</p>
+                        </div>
                       </div>
                     )}
                   </div>

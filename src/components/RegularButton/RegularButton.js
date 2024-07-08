@@ -32,15 +32,6 @@ const RegularButton = () => {
     setI(i + 1);
 
     if (i > 1) {
-      // setTimeout(() => {
-      //   setWipe(true);
-      // }, 4300);
-      // setTimeout(() => {
-      //   setLoading(7);
-      // }, 1);
-      // setTimeout(() => {
-      //   setLoading(2);
-      // }, 1);
       setTimeout(() => {
         setLoading(2);
       }, 5500);
@@ -90,7 +81,7 @@ const RegularButton = () => {
                 {i === 1 && "notice something ?"}
                 {i === 2 && "click on me !!"}
               </button>
-              {i > 1 ? <div className="popAnim" ref={popAnimRef}></div> : null}
+              {/* {i > 1 ? <div className="popAnim" ref={popAnimRef}></div> : null} */}
             </div>
             {i > 1 ? (
               <div className="squigglyAnim1" ref={squigglyAnim1}></div>
@@ -99,7 +90,7 @@ const RegularButton = () => {
         ) : load === 1 ? (
           <Loading />
         ) : null}
-        {/* {wipe && load !== 2 && <Wipe />} */}
+
         {load === 2 && <Hbd />}
         {load === 3 && (
           <h1 className="btn-heading-2 red duration6 ">
@@ -117,7 +108,7 @@ const RegularButton = () => {
           </h1>
         )}
         {load === 6 && (
-          <h1 className="btn-heading-2 red ">Devia Rajkumari, You are...</h1>
+          <h1 className="btn-heading-2 red ">Thaingam Thaimei, You are...</h1>
         )}
         {load === 7 && (
           <>

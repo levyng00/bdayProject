@@ -240,6 +240,11 @@
   }
 }
 .letter {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  color: #f02763;
+  width: 425px;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -257,4 +262,8 @@
     margin-left: -120px;
     margin-top: 80px;
   }
+}
+.letterFooter {
+  text-align: end;
+  padding-right: 20px;
 }
